@@ -1,0 +1,92 @@
+# Política (EXEMPLO) — respostas aprovadas. Placeholders: {id} (protocolo) e {produto}.
+# produto: rótulo, código (EMP, INV, CAR, CON, SEG, SEM) ou *   |   canal/tensao: opcionais (filtros duros)
+
+[POL-EMP-001]
+produto: Empréstimo
+palavras: juros acima, juros muito acima, juros além, taxa diferente, contrato do meu empréstimo, revisão do contrato, parcela diferente
+resposta: Registramos sua reclamação (protocolo {id}). Vamos conferir as condições contratadas e os valores cobrados e retornaremos com o resultado da análise dentro do prazo regulatório. Se necessário, um analista entrará em contato para solicitar o contrato.
+
+[POL-EMP-002]
+produto: Empréstimo
+palavras: quitação, quitei, antecipar, antecipação, renegociar, renegociação, boleto de quitação
+resposta: Recebemos sua solicitação sobre quitação ou renegociação (protocolo {id}). Verificaremos o saldo devedor e as condições disponíveis e enviaremos o boleto ou as opções de renegociação pelo canal cadastrado.
+
+[POL-EMP-003]
+produto: Empréstimo
+palavras: duplicidade, descontadas, descontando, em meu nome, sem autorização, liberação do meu empréstimo
+resposta: Seu caso foi registrado com prioridade (protocolo {id}). Vamos apurar descontos em duplicidade, contratações não reconhecidas e prazos de liberação, e informaremos o resultado e os próximos passos.
+
+[POL-CAR-001]
+produto: Cartão de Crédito
+palavras: cobrança indevida, cobrado em duplicidade, fatura com erro, encargo, anuidade
+resposta: Recebemos sua contestação (protocolo {id}). A cobrança será analisada e, se confirmada a irregularidade, o ajuste será feito na fatura. Você será informado(a) sobre o andamento pelo canal cadastrado.
+
+[POL-CAR-002]
+produto: Cartão de Crédito
+palavras: clonado, compra não reconhecida, compras que não reconheço, bloqueado, bloqueio, cancelaram meu cartão
+resposta: Registramos sua ocorrência com prioridade (protocolo {id}). Recomendamos manter o cartão bloqueado até a conclusão da análise e não compartilhar senhas ou códigos. Um especialista de segurança entrará em contato.
+
+[POL-CAR-003]
+produto: Cartão de Crédito
+palavras: limite, aumentar o limite, data de vencimento, parcelar a fatura, programa de pontos, novo cartão
+resposta: Recebemos sua solicitação sobre o cartão (protocolo {id}). Limites, vencimentos, parcelamentos e entrega de cartão são tratados pelo aplicativo e pela central; verificaremos seu caso e retornaremos com as opções disponíveis.
+
+[POL-CON-001]
+produto: Conta Corrente
+palavras: tarifa, tarifas, pacote de serviços, taxa de manutenção, tarifas indevidas
+resposta: Registramos sua solicitação sobre tarifas (protocolo {id}). Verificaremos o pacote de serviços contratado e as cobranças realizadas e informaremos o resultado da análise.
+
+[POL-CON-002]
+produto: Conta Corrente
+palavras: pix, transferência, transferências, chave pix, não foi creditado, golpe
+resposta: Recebemos sua solicitação sobre Pix e transferências (protocolo {id}). Em caso de transação não reconhecida, acione imediatamente o bloqueio pelo aplicativo; abriremos o pedido de devolução (MED) e acompanharemos o resultado.
+
+[POL-CON-003]
+produto: Conta Corrente
+palavras: conta bloqueada, conta corrente foi bloqueada, encerraram minha conta, encerramento, aplicativo trava
+resposta: Seu caso foi registrado (protocolo {id}). Vamos verificar o motivo de bloqueios, encerramentos ou falhas no aplicativo e retornaremos com a orientação para regularização.
+
+[POL-INV-001]
+produto: Investimentos
+palavras: resgate, rentabilidade, rendimento, rendimentos, taxa de administração, extrato mostra
+resposta: Recebemos sua solicitação sobre investimentos (protocolo {id}). Vamos validar a posição, a rentabilidade, as taxas e o prazo de resgate do produto e retornaremos com os esclarecimentos.
+
+[POL-INV-002]
+produto: Investimentos
+palavras: perfil de investidor, induzido, fundo de risco, aplicação feita em meu nome, CDB, LCI
+resposta: Seu caso foi registrado com prioridade (protocolo {id}). Analisaremos a adequação do produto ao seu perfil e a regularidade da contratação, e um especialista entrará em contato.
+
+[POL-SEG-001]
+produto: Seguros
+palavras: sinistro, apólice, indenização, beneficiário, beneficiários
+resposta: Registramos seu pedido relativo ao seguro (protocolo {id}). A apólice, a cobertura e o andamento do sinistro serão verificados e você receberá o retorno com os próximos passos.
+
+[POL-SEG-002]
+produto: Seguros
+palavras: seguro que eu nunca contratei, cobrança do seguro, cancelei o seguro, cancelamento do seguro, reajuste do meu seguro, assistência 24 horas
+resposta: Recebemos sua solicitação sobre cobrança, cancelamento ou reajuste de seguro (protocolo {id}). Verificaremos a contratação e o histórico de cobranças e informaremos o resultado.
+
+[POL-SEM-001]
+produto: SEM
+palavras: consórcio, contemplado, contemplação, carta de crédito, assembleia, lance
+resposta: Registramos sua solicitação sobre consórcio (protocolo {id}). Vamos verificar o grupo, a cota e o andamento da contemplação ou da carta de crédito e retornaremos com as informações.
+
+[POL-SEM-002]
+produto: SEM
+palavras: financiamento, imóvel, hipoteca, amortização, FGTS, portabilidade
+resposta: Recebemos sua solicitação sobre financiamento imobiliário (protocolo {id}). Analisaremos o contrato, a documentação e as condições aplicáveis e informaremos os próximos passos.
+
+[POL-SEM-003]
+produto: SEM
+palavras: previdência, PGBL, VGBL, carregamento, contribuição
+resposta: Registramos sua solicitação sobre previdência privada (protocolo {id}). Verificaremos saldos, taxas, contribuições e prazos de resgate e retornaremos com os esclarecimentos.
+
+[POL-SEM-004]
+produto: SEM
+palavras: câmbio, remessa internacional, dólar, dólares, euros, cartão pré-pago de viagem, cotação
+resposta: Recebemos sua solicitação sobre câmbio e remessas (protocolo {id}). Vamos conferir a cotação aplicada, o status da operação e o comprovante, e retornaremos com a posição.
+
+[POL-GER-001]
+produto: *
+palavras: fraude, golpe, não reconheço, nunca autorizei
+resposta: Sua comunicação (protocolo {id}) foi priorizada por indício de fraude. Recomendamos bloquear o produto afetado e não compartilhar senhas ou códigos. Um especialista de segurança entrará em contato.

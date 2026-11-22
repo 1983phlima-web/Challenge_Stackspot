@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "challenge-automation-stackspot"
+version = "1.0.0"
+description = "Triagem de reclamações com IA: pré-processamento, fila, ordenação e Performer de respostas."
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.1", "httpx>=0.27", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5", "mypy>=1.10", "pandas-stubs", "types-PyYAML"]
+
+[project.scripts]
+challenge = "challenge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+challenge = ["py.typed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM", "D", "C4", "PT", "RUF"]
+ignore = ["D203", "D213", "D107", "D105", "E501", "RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D", "PT018"]
+"scripts/*" = ["D"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

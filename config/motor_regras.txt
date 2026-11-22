@@ -1,0 +1,90 @@
+# Motor de Regras (EXEMPLO) — nivel;termo;peso;piso(s/n)   ('*' = curinga, ex.: desesper*)
+# piso=s: o termo impõe tensão mínima, mesmo que a IA classifique abaixo.
+# Substitua por suas regras reais; os limiares abaixo definem o nível sugerido sem IA.
+@limiar_alta=3
+@limiar_media=2
+
+# --- ALTA: ameaça formal, escalonamento, fraude, vulnerabilidade, linguagem agressiva
+ALTA;procon;3;s
+ALTA;acao judicial;3;s
+ALTA;processo judicial;3;s
+ALTA;processar*;2.5;s
+ALTA;ministerio publico;3;s
+ALTA;justica;2
+ALTA;advogado;2
+ALTA;banco central;2
+ALTA;bacen;2
+ALTA;reclame aqui;2
+ALTA;danos morais;2.5;s
+ALTA;denunci*;2
+ALTA;expor;1.5
+ALTA;redes sociais;1
+ALTA;fraude;3;s
+ALTA;golpe;3;s
+ALTA;clonad*;3;s
+ALTA;nao reconheco;2
+ALTA;nunca contratei;2
+ALTA;nunca autorizei;2
+ALTA;sem autorizacao;2
+ALTA;em meu nome;2
+ALTA;negativaram;2
+ALTA;desesper*;2
+ALTA;absurdo;2
+ALTA;absurda;2
+ALTA;inaceitavel;2
+ALTA;indignad*;2
+ALTA;falta de respeito;2
+ALTA;descaso;1.5
+ALTA;lesad*;2
+ALTA;maltratad*;2
+ALTA;passando necessidade;3;s
+ALTA;abusiv*;2
+ALTA;se recusa*;1.5
+ALTA;retem;1.5
+ALTA;bloqueado sem;2
+ALTA;sem recursos;2
+
+# --- MEDIA: insatisfação, cobrança de solução, demora, sem sair do tom
+MEDIA;insatisfeit*;1.5
+MEDIA;chatead*;1
+MEDIA;descontentamento;1.5
+MEDIA;demora*;1
+MEDIA;atrasad*;1
+MEDIA;sem resposta;1.5
+MEDIA;sem retorno;1.5
+MEDIA;ninguem retornou;1.5
+MEDIA;ninguem resolve;1.5
+MEDIA;ninguem me deu;1
+MEDIA;nenhuma posicao;1.5
+MEDIA;nada mudou;1
+MEDIA;nada acontece;1
+MEDIA;nada foi resolvido;1.5
+MEDIA;continua sem solucao;1.5
+MEDIA;nao consigo;1
+MEDIA;nao estou conseguindo;1
+MEDIA;ja liguei;1
+MEDIA;mais de uma vez;1
+MEDIA;ultrapassad*;1
+MEDIA;prazo*;0.5
+MEDIA;cobranca indevida;1.5
+MEDIA;cobraram;0.5
+MEDIA;diferente;1
+MEDIA;incorret*;1
+MEDIA;errad*;1
+MEDIA;sem aviso;1.5
+MEDIA;ainda nao;0.5
+MEDIA;trava;1
+MEDIA;caiu;0.5
+MEDIA;remarcad*;1
+MEDIA;duas vezes;0.5
+
+# --- BAIXA: evidências de dúvida ou elogio (não elevam a tensão; úteis para auditoria)
+BAIXA;duvida;1
+BAIXA;como faco;1
+BAIXA;gostaria de saber;1
+BAIXA;elogio;1
+BAIXA;agradec*;1
+BAIXA;parabens;1
+BAIXA;obrigad*;1
+BAIXA;recomendo;1
+BAIXA;satisfeit*;1
