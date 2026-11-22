@@ -1,0 +1,22 @@
+# Pacote STACKSPOT. Caminhos relativos de rules_file/policy_file partem desta pasta.
+base_dir: C:\Challenge
+input_filename: dataset_challenge.csv
+rules_file: motor_regras.txt
+policy_file: politica.txt
+
+llm_provider: stackspot
+stackspot_realm: SEU_REALM        # realm da sua conta StackSpot
+stackspot_agent_id: SEU_AGENT_ID  # agente DEDICADO, sem Knowledge Sources
+llm_timeout_s: 90
+llm_workers: 3                    # respeite o limite de requisições da sua conta
+mask_pii: true                    # os textos saem para a plataforma: mantenha ligado
+
+# Credenciais NUNCA aqui: variáveis de ambiente STACKSPOT_CLIENT_ID e STACKSPOT_CLIENT_SECRET.
+
+# Ciclo de reprocessamento (_loop)
+loop_rounds_per_run: 2
+loop_retry_delay_s: 10
+max_loop_cycles: 5
+
+top_risks: 15
+log_level: INFO
